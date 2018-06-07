@@ -1,0 +1,65 @@
+SCIENCE FICTION COLLECTION SURVEY
+
+This repository contains data files for a survey being conducted by
+Creative Minority Productions (http://creativeminorityproductions.com)
+as a community service project in conjunction with a local public 
+library branch.
+
+Unless otherwise noted all files are released under a Creative Commons
+Attribution-Noncommercial license (see file LICENSE for details).
+
+The survey has two main fpurposes: 1) To discover the relative 
+importance of various factors in patrons' selection of speculative 
+fiction materials. 2) To segment the speculative fiction using 
+population so that the needs of each segment can be more adequately met.
+
+Analysis is currently ongoing; this repository currently contains mostly
+raw data or data in a very early stage of analysis.  I will post the 
+actual report as soon as I have a good first draft.
+
+Kevin A. Straight   7 June 2018
+
+
+FILES
+
+code_data.py           Python 2.x script used to code the raw dump from 
+                       Google Forms into a numeric format usable for 
+                       analysis (GPL 2.0 License)
+                 
+finalSurveyDump.csv    Raw data dump from Google Forms
+
+finalDumpClean,csv     Raw data after procressing with code_data.py.  
+                       Variables coded numerically, empty records 
+                       removed. Invalid and foreign zip codes deleted 
+                       within records.
+                       
+LICENSE                Full text of the CC-BY-NC license
+
+README                 This file
+
+survey_facimile.pdf    Print-out of the actual survey
+
+survey_data.odt        k-means cluster analysis (Open Office 
+                       spreadsheet)
+                       
+survey_data.por        Survey data as a PSPP files (should open in SPSS
+                       or import into other stat packages, but I haven't
+                       tried yet)
+                       
+survey_data.xls        k-means cluster analysis saved as an Excel
+                       spreadsheet (native format is .ods)
+                       
+T-test.odt             Output of PSPP for unpaired-T tests for various
+                       splits of the data, included for people who 
+                       can't run PSPP or SPSS for some reason.
+                       
+T-test.pdf             " 
+
+zip_code_database.csv  List of valid us zip codes.  Used by 
+                       code_data.py.  This comes from USPS so I believe
+                       it is in the Public Domain under the Federal 
+                       Documents rule.  If I'm wrong, someone please
+                       correct me.  
+
+
+                     
